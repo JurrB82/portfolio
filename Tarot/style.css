@@ -1,0 +1,400 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+#logoText {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+#navbar {
+    display: flex;
+    background-color: #0b275b;
+    justify-content: space-between;
+    padding: 4px 10px;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar a:last-child {
+    padding-right: 16px;
+}
+
+.standardHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding-top: 24px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 32px;
+}
+
+.standardSubHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+}
+
+.standardText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+}
+
+#mainCardPage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#headerCardPage {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#textCardPage {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 600px;
+}
+
+#imageCardPage {
+    grid-area: 1 / 2 / 3 / 3;
+    padding-top: 32px;
+}
+
+#tarotFigcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20px;
+    padding-left: 4px;
+
+}
+
+#loginPart {
+    width: 15%;
+}
+
+#otherPart {
+    width: 85%;
+}
+
+button {
+    background-color: lightgrey;
+    height: 20px;
+    width: 100px;
+    margin-top: 4px;
+    border-radius: 8px;
+}
+
+#logoutButton {
+    margin-left: 8px;
+}
+
+#mainSection {
+    display: flex;
+}
+
+#loginFunction {
+    padding: 8px;
+}
+
+#loginFunction>label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-top: 0px;
+}
+
+#loginFunction>p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+#selectionBox {
+    background-color: CornflowerBlue;
+    width: 200px;
+    flex-shrink: 0;
+    padding: 8px;
+}
+
+#selectionBox h3 {
+    text-align: center;
+}
+
+#mainSpreads {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 100%; */
+    flex-grow: 1;
+    max-width: 800px;
+}
+
+figure {
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+
+.rotate img {
+    transform: rotate(180deg);
+}
+
+
+#spreadField {
+    background-color: AliceBlue;
+}
+
+
+
+#spreadField div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spreadField figcaption {
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+
+}
+
+#spreadField a {
+    text-decoration: none;
+    color: black;
+}
+
+#spreadField a>img {
+    height: 200px;
+
+}
+
+#selectionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.catLover,
+.wtf,
+.three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.three {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    padding: 16px;
+    padding-top: 128px;
+    padding-left: 64px
+}
+
+.wtf {
+    font-family: "Comic Sans MS";
+    max-height: 600px;
+    padding: 16px;
+    padding-top: 64px;
+    padding-left: 64px;
+}
+
+.catLover {
+    max-height: 800px;
+    padding: 16px;
+    padding-top: 80px;
+    padding-left: 88px;
+}
+
+.catLover a,
+.wtf a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.catLover figure:first-child,
+.catLover figure:last-child {
+    width: 100%;
+
+}
+
+.wtf figure {
+    width: 25%;
+    justify-content: center;
+}
+
+.wtf figure:first-child,
+.wtf figure:nth-child(2) {
+    display: flex;
+    padding-left: 25%;
+
+}
+
+.wtf figure:nth-child(2) {
+    padding-left: 0;
+    padding-right: 25%;
+}
+
+.celticCross {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 48px;
+    grid-row-gap: 8px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    max-width: 600px;
+}
+
+.celticCross figure:nth-child(1) div,
+.celticCross figure:nth-child(2) div,
+.celticCross figure:nth-child(3) div,
+.celticCross figure:nth-child(4) div,
+.celticCross figure:nth-child(5) div,
+.celticCross figure:nth-child(6) div {
+    transform: translateY(-50%);
+}
+
+.celticCross figure:first-child {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.celticCross figure:nth-child(2) {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.celticCross figure:nth-child(2) div {
+    transform: rotate(90deg) translateX(-100%);
+}
+
+.celticCross figure:nth-child(2) span {
+    transform: rotate(-90deg) translateX(-100%);
+}
+
+
+.celticCross figure:nth-child(3) {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.celticCross figure:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.celticCross figure:nth-child(5) {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.celticCross figure:nth-child(6) {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.celticCross figure:nth-child(7) {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.celticCross figure:nth-child(8) {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.celticCross figure:nth-child(9) {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.celticCross figure:nth-child(10) {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    flex-direction: column;
+}
+
+.blogMain {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color: black;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+#smallArcanaTable {
+    border: 2px solid darkslategray;
+}
+
+#smallArcanaTable th,
+#smallArcanaTable td {
+    padding: 8px;
+    border: 1px solid darkgray;
+}
+
+#smallArcanaTable th {
+    text-align: center;
+
+}
+
+.tooltip {
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip .tooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+
+}
+
+.underConstructionCat {
+    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
